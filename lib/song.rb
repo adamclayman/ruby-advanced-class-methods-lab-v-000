@@ -16,9 +16,7 @@ class Song
   end
 
   def self.create(name = nil, artist_name = nil)
-    song = Song.new
-    song.name = name
-    song.artist_name = artist_name
+    song = Song.new(name, artist_name)
     self.class.all << self
     self
   end

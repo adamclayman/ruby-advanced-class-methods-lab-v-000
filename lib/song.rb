@@ -21,7 +21,7 @@ class Song
 
   def self.create_by_name(name)
     self.name = name
-    self.all << self
+    self.class.all << self
     self
   end
 

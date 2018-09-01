@@ -48,4 +48,16 @@ class Song
   def self.destroy_all
     self.all.clear
   end
+
+  def self.new_from_filename(filename)
+    parts = filename.split(".")
+    names = parts[0].split("-").strip
+    name = names[0]
+    artist_name = names[1]
+    song = self.new
+    song.name = name
+    song.artist_name = artist_name
+    song
+  end
+
 end

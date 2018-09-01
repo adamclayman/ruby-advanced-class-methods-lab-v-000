@@ -49,6 +49,11 @@ class Song
     self.all.clear
   end
 
+  def self.create_from_filename(filename)
+    song = self.new_from_filename(filename)
+    @@all << song
+  end
+
   def self.new_from_filename(filename)
     parts = filename.split(".")
     names = parts[0].split("-")

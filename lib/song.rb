@@ -53,7 +53,7 @@ class Song
     parts = filename.split(".")
     names = parts[0].split("-")
     name = names[0].strip
-    artist_name = names[1].trip
+    artist_name = names[1].strip
     song = self.new
     song.name = name
     song.artist_name = artist_name

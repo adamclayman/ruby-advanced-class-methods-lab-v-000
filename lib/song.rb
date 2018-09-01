@@ -15,5 +15,5 @@ class Song
     self.class.all << self
     self
   end
-  
+
 end

@@ -15,7 +15,7 @@ class Song
     song = self.new
     song.name = name
     song.artist_name = artist_name
-    self.all << song
+    self.class.all << song
     self
   end
 

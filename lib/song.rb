@@ -15,7 +15,7 @@ class Song
     self.class.all << self
   end
 
-  def self.create(name = "", artist_name = "")
+  def self.create(name = nil, artist_name = nil)
     song = Song.new(name, artist_name)
     self.class.all << self
     self
